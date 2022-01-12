@@ -1,0 +1,22 @@
+on: [push, pull_request]
+name: Lint
+
+jobs:
+  clippy-check:
+    name: Clippy
+    runs-on: ubuntu-latest
+    steps:
+      # Checks out the repository under `$GITHUB_WORKSPACE`, so the workflow can
+      # access it. See https://github.com/actions/checkout.
+      - name: Checkout the workspace
+        uses: actions/checkout@v2
+
+      # Install stable Clippy
+      - name: Install Clippy
+        run: rustup component add clippy
+
+      # Run Clippy. See https://github.com/actions-rs/clippy-check.
+      - uses: actions-rs/clippy-check@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          args: --all-features

@@ -1,0 +1,6 @@
+# GitHub Linguist strategies
+# See https://github.com/github/linguist/blob/master/docs/overrides.md
+*.rs               linguist-detectable=true   linguist-language=Rust
+*.yml *.yaml       linguist-detectable=true   linguist-language=YAML
+*.toml Cargo.lock  linguist-detectable=true   linguist-language=TOML
+*.md               linguist-detectable=false  linguist-documentation=true
