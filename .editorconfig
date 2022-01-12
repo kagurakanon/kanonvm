@@ -1,0 +1,14 @@
+# See more options at https://editorconfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{md,rs,toml,yml}]
+charset = utf-8
+
+[*.{rs}]
+indent_style = space
+indent_size = 4
