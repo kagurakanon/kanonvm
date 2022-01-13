@@ -1,9 +1,15 @@
 # macOS desktop services store
 .DS_Store
 
-# Explicitly track the `Cargo.lock` file for executables.
-# See more information of `Cargo.lock` at
-# https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+# Packages in the workspace share the same `Cargo.lock` and output directory. We
+# need to explicitly track the `Cargo.lock` in the root directory.
+#
+# See also:
+#
+# - Cargo Workspaces - The Rust Programming Language
+#   https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html
+# - Cargo.toml vs Cargo.lock - The Cargo Book
+#   https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
 !Cargo.lock
 
 # Compiled files and executables
