@@ -3,5 +3,12 @@
 version = 3
 
 [[package]]
-name = "kanonvm"
+name = "java"
 version = "0.1.0"
+dependencies = [
+ "kanonvm-classfile",
+]
+
+[[package]]
+name = "kanonvm-classfile"
+version = "0.0.0"
