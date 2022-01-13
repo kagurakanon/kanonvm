@@ -6,7 +6,7 @@ Kanon VM
 
 [mpl-badge]: https://img.shields.io/badge/License-MPL_2.0-orange.svg
 [mpl-license]: https://opensource.org/licenses/MPL-2.0
-[gh-action]: https://github.com/kagurakanon/kanonvm/actions/workflows/cargo.yml/badge.svg
+[gh-action]: https://github.com/kagurakanon/kanonvm/actions/workflows/test.yml/badge.svg
 
 Kanon VM is an experimental Java compiler and Java virtual machine (JVM) written 
 in Rust, for research purposes only.

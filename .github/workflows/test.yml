@@ -1,9 +1,9 @@
 on: [push, pull_request]
-name: Cargo
+name: Cargo Test
 
 jobs:
-  build-and-run:
-    name: Test
+  test:
+    name: Run
     runs-on: ${{ matrix.config.os }}
 
     strategy:

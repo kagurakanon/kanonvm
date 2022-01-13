@@ -1,9 +1,9 @@
 on: [push, pull_request]
-name: Lint
+name: Clippy
 
 jobs:
   clippy-check:
-    name: Clippy
+    name: Check
     runs-on: ubuntu-latest
     steps:
       # Checks out the repository under `$GITHUB_WORKSPACE`, so the workflow can
